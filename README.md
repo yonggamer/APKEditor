@@ -531,7 +531,7 @@ Examples:
 
  ```ShellSession
  
-# NB: Due to my lazyness , the dependency ARSCLib.jar is pre-built and placed under APKEditor/libs/ARSCLib.jar or you can build yourself and replace it.
+# NB: The dependency ARSCLib.jar is pre-built and placed under APKEditor/libs/ARSCLib.jar or you can build yourself and replace it.
 git clone https://github.com/REAndroid/APKEditor
 cd APKEditor
 ./gradlew fatJar
