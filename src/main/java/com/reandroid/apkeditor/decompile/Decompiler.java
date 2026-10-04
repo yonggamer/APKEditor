@@ -76,7 +76,7 @@ public class Decompiler extends CommandExecutor<DecompileOptions> {
             decoder = xmlDecoder;
             XmlCoder.getInstance().getSetting().setLogger(this);
         }
-        decoder.sanitizeFilePaths();
+        decoder.setSanitizePaths(true);
         decoder.setDexDecoder(getSmaliDecompiler(apkModule));
         DexProfileDecoderImpl dexProfileDecoder = new DexProfileDecoderImpl(options);
         dexProfileDecoder.setApkLogger(this);
